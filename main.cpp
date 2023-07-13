@@ -17,7 +17,7 @@ int main(int argc, const char *argv[])
 	}
 
 	// Подключаемся к серверу
-	if (!mysql_real_connect(&mysql, "localhost", "dbuser", "dbpass", "console_chat", 3306, NULL, 0))
+	if (!mysql_real_connect(&mysql, "localhost", "dbuser", "dbpass", "dbname", 3306, NULL, 0))
 	{
 		// Если нет возможности установить соединение с БД выводим сообщение об ошибке
 		std::cout << "Error: can't connect to database " << mysql_error(&mysql) << std::endl;
