@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/mysql/*"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "intelliSenseMode": "linux-gcc-x64",
+            "cStandard": "c23",
+            "cppStandard": "c++20",
+            "configurationProvider": "ms-vscode.makefile-tools",
+            "compilerArgs": [
+                "-I/usr/include/mysql",
+                "-L/usr/lib/x86_64-linux-gnu -lmysqlclient -lzstd -lssl -lcrypto -lresolv -lm"
+            ]
+        }
+    ],
+    "version": 4
+}
